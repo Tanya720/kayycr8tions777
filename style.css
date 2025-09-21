@@ -1,0 +1,287 @@
+/* reset - removes default browser spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* styling with background image for main page */
+body {
+    font-family: 'Arial', sans-serif;
+    background: url('images/logo.png') center/cover no-repeat fixed;
+    background-color: #f5f5dc;
+    text-align: center;
+    min-height: 100vh;
+}
+
+/* Navigation bar - floating pill shape */
+header {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 30px;
+    background: rgba(100, 50, 200, 0.6);
+    border-radius: 50px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+}
+
+/* Navigation links */
+header a {
+    text-decoration: none;
+    color: #0ff;
+    font-weight: bold;
+    font-family: 'Impact', Arial Black, sans-serif; 
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    font-size: 16px;
+}
+
+/* Hover for navigation */
+header a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+}
+
+/* content container for main */
+main {
+    padding: 120px 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero text on the home page */
+.hero-text {
+    color: #FFD700;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-top: 80px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main heading size */
+.hero-text h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* Call-to-action button */
+.cta-button {
+    display: inline-block;
+    margin: 30px auto;
+    padding: 20px 50px;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    color: black;
+    background-color: #00FF00;
+    border-radius: 15px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+/* Button for hover animation */
+.cta-button:hover {
+    background-color: #00cc00;
+    transform: scale(1.05);
+}
+
+/*  title banner */
+.section-title {
+    background-color: rgba(0, 255, 255, 0.5);
+    color: #FFD700;
+    font-family: 'Courier New', monospace;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 20px 0;
+    border-radius: 10px;
+}
+
+/* Top row layout for shop page */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+/* sections in top row */
+.top-section {
+    flex: 1;
+    text-align: center;
+}
+
+/* headings styling */
+.top-section h1 {
+    color: #00ffff;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(150, 50, 200, 0.8);
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: inline-block;
+    text-shadow: none;
+}
+
+/* Gallery for top sections */
+.top-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* section for bags */
+.bottom-section {
+    text-align: center;
+    margin-top: 40px;
+}
+
+/* Bottom section heading */
+.bottom-section h1 {
+    color: #00ffff;
+    font-size: 2.2em;
+    font-weight: bold;
+    margin-bottom: 20px;
+    background: rgba(150, 50, 200, 0.8);
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: inline-block;
+    text-shadow: none;
+}
+
+/* Gallery  bottom section */
+.bottom-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* artwork frames */
+.gallery-item {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: #eee;
+    transition: transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: #666;
+    border: 2px solid #ddd;
+}
+
+/* Image sizing within frames */
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* hover effects for gallery */
+.gallery-item:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+    border-color: #999;
+}
+
+/* About page layout */
+.about-main {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    min-height: 70vh;
+}
+
+/* Content on about page */
+.content-section {
+    flex: 1;
+    text-align: left;
+    padding-right: 20px;
+}
+
+/* About page heading */
+.about-heading {
+    color: #FFD700;
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* content box for about text*/
+.about-text {
+    background-color: rgba(255, 255, 0, 0.7);
+    color: #4b0082;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+/* Artist photos  */
+.images-section {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*  arrangement container for photos */
+.circular-gallery {
+    position: relative;
+    width: 400px;
+    height: 400px;
+}
+
+/* image position at top */
+.circular-gallery .gallery-item:nth-child(1) {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* left image bottom rotation */
+.circular-gallery .gallery-item:nth-child(2) {
+    bottom: 50px;
+    left: 0;
+    transform: rotate(-15deg);
+}
+
+/* right image bottom rotation */
+.circular-gallery .gallery-item:nth-child(3) {
+    bottom: 50px;
+    right: 0;
+    transform: rotate(15deg);
+}
+
+/* gallery hover effects */
+.circular-gallery .gallery-item:hover {
+    transform: scale(1.05) !important;
+    z-index: 10;
+}
+
+/* Footer styling */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    color: #666;
+    font-size: 14px;
+    text-align: left;
+}
