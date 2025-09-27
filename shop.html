@@ -7,61 +7,69 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
 
-  <main>
+  <main id="main-content">
     <div class="top-row">
-      <div class="top-section">
-        <h1>Prints</h1>
+      <section class="top-section" aria-labelledby="prints-heading">
+        <h1 id="prints-heading">Prints</h1>
         <div class="top-gallery">
           <div class="gallery-item">
-            <img src="images/print1.jpeg" alt="Print 1">
+            <img src="images/print1.jpeg" alt="Colorful abstract print featuring vibrant brushstrokes and artistic expression">
           </div>
           <div class="gallery-item">
-            <img src="images/print2.jpeg" alt="Print 2">
+            <img src="images/print2.jpeg" alt="Creative print artwork with bold colors and unique design elements">
           </div>
         </div>
-      </div>
+      </section>
 
-      <div class="top-section">
-        <h1>Canvas Work</h1>
+      <section class="top-section" aria-labelledby="canvas-heading">
+        <h1 id="canvas-heading">Canvas Work</h1>
         <div class="top-gallery">
           <div class="gallery-item">
-            <img src="images/canvas1.jpeg" alt="Canvas 1">
+            <img src="images/canvas1.jpeg" alt="Original canvas painting with expressive brushwork and vibrant colors">
           </div>
           <div class="gallery-item">
-            <img src="images/canvas2.jpeg" alt="Canvas 2">
+            <img src="images/canvas2.jpeg" alt="Abstract canvas artwork featuring bold strokes and creative composition">
           </div>
         </div>
-      </div>
+      </section>
     </div>
 
-    <div class="bottom-section">
-      <h1>Custom Portrait Bags</h1>
+    <section class="bottom-section" aria-labelledby="bags-heading">
+      <h1 id="bags-heading">Custom Portrait Bags</h1>
       <div class="bottom-gallery">
         <div class="gallery-item">
-            <img src="images/bag1.jpeg" alt="Bag 1">
+          <img src="images/bag1.jpeg" alt="Custom portrait bag featuring hand-painted artwork and personalized design">
         </div>
         <div class="gallery-item">
-            <img src="images/bag2.jpg" alt="Bag 2">
+          <img src="images/bag2.jpg" alt="Personalized tote bag with custom portrait art and vibrant colors">
         </div>
         <div class="gallery-item">
-           <img src="images/bag3.jpg" alt="Bag 3">
+          <img src="images/bag3.jpg" alt="Custom canvas bag with unique portrait design and artistic flair">
         </div>
         <div class="gallery-item">
-            <img src="images/bag4.jpg" alt="Bag 4">
+          <img src="images/bag4.jpg" alt="Handmade portrait bag with custom artwork and creative styling">
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-<footer>
-    <p><strong>Contact: kayycr8sart88@gmail.com</strong></p>
-    <p><strong>&copy; 2025 Kayy Cr8tions</strong></p>
-</footer>
+  <footer>
+    <div class="footer-content">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kayycr8sart88@gmail.com">kayycr8sart88@gmail.com</a></p>
+      <p>&copy; 2025 Kayy Cr8tions</p>
+    </div>
+  </footer>
 </body>
 </html>

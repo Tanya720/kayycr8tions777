@@ -7,38 +7,48 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <header>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
+    <nav aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+    </nav>
   </header>
 
-  <main class="about-main">
-    <div class="content-section">
-      <h1 class="about-heading">About</h1>
-      <div class="about-text">
-        "I'm Kayy, the heart and hands behind KayyCr8tions. Creating art has always been my way of expressing love, healing, and joy. Through bold colors and handmade details, I pour my soul into each piece with the intention to inspire and remind others of their own light. KayyCr8tions is more than art—it's a reflection of my journey, my spirit, and the beauty I see in the world."
+  <main id="main-content" class="about-main">
+    <section aria-labelledby="about-heading">
+      <div class="content-section">
+        <h1 id="about-heading" class="about-heading">About</h1>
+        <div class="about-text">
+          "I'm Kayy, the heart and hands behind KayyCr8tions. Creating art has always been my way of expressing love, healing, and joy. Through bold colors and handmade details, I pour my soul into each piece with the intention to inspire and remind others of their own light. KayyCr8tions is more than art—it's a reflection of my journey, my spirit, and the beauty I see in the world."
+        </div>
       </div>
-    </div>
 
-    <div class="images-section">
-      <div class="circular-gallery">
-        <div class="gallery-item">
-          <img src="images/artistk1.png" alt="Artist Photo 1">
-        </div>
-        <div class="gallery-item">
-          <img src="images/artistk3.png"alt="Artist Photo 2">
-        </div>
-        <div class="gallery-item">
-          <img src="images/artistk2.png" alt="Artist Photo 3">
+      <div class="images-section">
+        <div class="circular-gallery">
+          <div class="gallery-item">
+            <img src="images/artistk1.png" alt="Kayy working on a vibrant painting in her art studio, focused on creating detailed brushwork">
+          </div>
+          <div class="gallery-item">
+            <img src="images/artistk3.png" alt="Close-up of Kayy's hands mixing colorful paints while creating artwork">
+          </div>
+          <div class="gallery-item">
+            <img src="images/artistk2.png" alt="Kayy smiling while holding a finished canvas painting, showing her passion for art creation">
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 
-<footer>
-    <p><strong>Contact: kayycr8sart88@gmail.com</strong></p>
-    <p><strong>&copy; 2025 Kayy Cr8tions</strong></p>
-</footer>
+  <footer>
+    <div class="footer-content">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:kayycr8sart88@gmail.com">kayycr8sart88@gmail.com</a></p>
+      <p>&copy; 2025 Kayy Cr8tions</p>
+    </div>
+  </footer>
 </body>
 </html>

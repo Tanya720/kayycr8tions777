@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kayy Cr8tions</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to KayyCreations!</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <a href="index.html">Home</a>
-    <a href="shop.html">Shop</a>
-    <a href="about.html">About</a>
-  </header>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-  <div class="hero-text">
-    <h1>Welcome to KayyCr8tions!</h1>
-    <p>Hey beautiful souls! Welcome to KayyCr8tions. My little corner of colors, bold strokes, and handmade magic. Every canvas and creation is made with intention to heal, to inspire, and to remind you of your own light. Thank you for being here. Let the art speak to your spirit.</p>
-  </div>
-  
-  <a href="shop.html" class="cta-button">Visit My Shop</a>
-  
-  <div class="section-title">
-    Art That Feeds the Soul. Handmade With Heart.
-  </div>
+    
+    <header>
+        <nav aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="about.html">About</a>
+        </nav>
+    </header>
 
-<footer>
-    <p><strong>Contact: kayycr8sart88@gmail.com</strong></p>
-    <p><strong>&copy; 2025 Kayy Cr8tions</strong></p>
-</footer>
+    
+    <main id="main-content">
+        <!-- Your hero/welcome section -->
+        <section aria-labelledby="hero-heading">
+            <h1 id="hero-heading">Welcome to KayyCreations!</h1>
+            <div class="hero-text">
+                <p class="description-text">
+                    Hey beautiful souls! Welcome to KayyCreations. My little corner of 
+                    colors, bold strokes, and handmade magic. Every canvas and creation is 
+                    made with intention to heal, to inspire, and to remind you of your own light. 
+                    Thank you for being here. Let the art speak to your spirit.
+                </p>
+                <a href="shop.html" class="cta-button" aria-label="Visit shop to see artwork">
+                    VISIT MY SHOP
+                </a>
+            </div>
+        </section>
+    </main>
+
+    
+    <footer>
+        <div class="footer-content">
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:kayycr8art@gmail.com">kayycr8art@gmail.com</a></p>
+            <p>&copy; 2025 Kayy Cr8tions</p>
+        </div>
+    </footer>
 </body>
 </html>
