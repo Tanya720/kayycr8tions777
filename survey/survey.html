@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KayyCr8tions Website Survey</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .header {
+            text-align: center;
+            background-color: #007bff;
+            color: white;
+            padding: 20px;
+            margin: -30px -30px 30px -30px;
+            border-radius: 10px 10px 0 0;
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        
+        .subtitle {
+            margin: 10px 0 0 0;
+            font-size: 1.1em;
+        }
+        
+        .question {
+            margin-bottom: 25px;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            border-left: 4px solid #007bff;
+        }
+        
+        .question-number {
+            color: #28a745;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        
+        .question-text {
+            font-weight: bold;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        
+        .required {
+            color: red;
+        }
+        
+        input[type="text"], 
+        select, 
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+        
+        textarea {
+            height: 100px;
+            resize: vertical;
+        }
+        
+        .answer-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        
+        .answer-button {
+            background-color: #f8f9fa;
+            border: 2px solid #ddd;
+            padding: 12px 15px;
+            border-radius: 4px;
+            text-align: left;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.2s;
+        }
+        
+        .answer-button:hover {
+            background-color: #e9ecef;
+            border-color: #007bff;
+        }
+        
+        .website-link {
+            display: block;
+            background-color: #007bff;
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+            margin: 15px 0;
+            font-weight: bold;
+        }
+        
+        .website-link:hover {
+            background-color: #0056b3;
+        }
+        
+        .submit-button {
+            background-color: #007bff;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+        
+        .name-fields {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .name-fields input {
+            flex: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>KayyCr8tions Website Survey</h1>
+            <p class="subtitle">Help me make your experience even more magical!</p>
+        </div>
+        
+        <form>
+            <!-- Website Link -->
+            <div class="question">
+                <div class="question-text">Please visit my website before answering the questions:</div>
+                <a href="https://your-website-url.com" target="_blank" class="website-link">
+                    Click Here to Visit KayyCr8tions Website
+                </a>
+            </div>
+
+            <!-- Question 1: Name -->
+            <div class="question">
+                <div class="question-number">Question 1</div>
+                <div class="question-text">What's your first and last name? <span class="required">*</span></div>
+                <div class="name-fields">
+                    <input type="text" placeholder="First Name" required>
+                    <input type="text" placeholder="Last Name" required>
+                </div>
+            </div>
+
+            <!-- Question 2: Site Flow -->
+            <div class="question">
+                <div class="question-number">Question 2</div>
+                <div class="question-text">How did the flow of the site feel for you?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Super easy</button>
+                    <button type="button" class="answer-button">Pretty smooth</button>
+                    <button type="button" class="answer-button">Neutral</button>
+                    <button type="button" class="answer-button">A little tricky</button>
+                    <button type="button" class="answer-button">Hard to find things</button>
+                </div>
+            </div>
+
+            <!-- Question 3: Brand Energy -->
+            <div class="question">
+                <div class="question-number">Question 3</div>
+                <div class="question-text">Does the look and vibe of the site feel like KayyCr8tions' energy?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Yes, it matches perfectly</button>
+                    <button type="button" class="answer-button">Kind of</button>
+                    <button type="button" class="answer-button">Not really</button>
+                </div>
+            </div>
+
+            <!-- Question 4: Clear Offerings -->
+            <div class="question">
+                <div class="question-number">Question 4</div>
+                <div class="question-text">Was it clear what I offer (art, accessories, photo sessions, etc.)?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Yes, very clear</button>
+                    <button type="button" class="answer-button">Somewhat</button>
+                    <button type="button" class="answer-button">No, I wasn't sure</button>
+                </div>
+            </div>
+
+            <!-- Question 5: Eye-catching Creations -->
+            <div class="question">
+                <div class="question-number">Question 5</div>
+                <div class="question-text">What type of creations caught your eye the most?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Canvas art</button>
+                    <button type="button" class="answer-button">Tote bags</button>
+                    <button type="button" class="answer-button">Prints</button>
+                    <button type="button" class="answer-button">Custom accessories</button>
+                    <button type="button" class="answer-button">Photography sessions</button>
+                </div>
+            </div>
+
+            <!-- Question 6: Future Creations -->
+            <div class="question">
+                <div class="question-number">Question 6</div>
+                <div class="question-text">Is there anything new you'd love for me to add or create in the future?</div>
+                <textarea placeholder="Share your ideas for new creations..."></textarea>
+            </div>
+
+            <!-- Question 7: Browsing Experience -->
+            <div class="question">
+                <div class="question-number">Question 7</div>
+                <div class="question-text">How was your experience browsing for items or services?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Super smooth</button>
+                    <button type="button" class="answer-button">Smooth</button>
+                    <button type="button" class="answer-button">Neutral</button>
+                    <button type="button" class="answer-button">A little confusing</button>
+                    <button type="button" class="answer-button">Very confusing</button>
+                </div>
+            </div>
+
+            <!-- Question 8: Purchase Likelihood -->
+            <div class="question">
+                <div class="question-number">Question 8</div>
+                <div class="question-text">How likely are you to make a purchase or book something through the site?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Very likely</button>
+                    <button type="button" class="answer-button">Likely</button>
+                    <button type="button" class="answer-button">Not sure yet</button>
+                    <button type="button" class="answer-button">Not likely</button>
+                </div>
+            </div>
+
+            <!-- Question 9: Stay Connected -->
+            <div class="question">
+                <div class="question-number">Question 9</div>
+                <div class="question-text">Would you like to stay connected for updates on new drops, events, or specials?</div>
+                <div class="answer-buttons">
+                    <button type="button" class="answer-button">Yes, keep me in the loop</button>
+                    <button type="button" class="answer-button">Maybe later</button>
+                    <button type="button" class="answer-button">Not right now</button>
+                </div>
+            </div>
+
+            <!-- Question 10: Magical Improvements -->
+            <div class="question">
+                <div class="question-number">Question 10</div>
+                <div class="question-text">What's one thing I could sprinkle in or change to make your visit even more magical?</div>
+                <textarea placeholder="Share your suggestions to make the experience more magical..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-button">Submit Survey</button>
+        </form>
+    </div>
+</body>
+</html>
